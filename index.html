@@ -40,6 +40,10 @@
   section.alt .card { background: var(--bg); }
   .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
   .card p { margin: 0; color: var(--muted); font-size: .97rem; }
+  .teaser { border: 1px solid var(--border); border-radius: 16px; padding: 36px 28px; background: var(--surface); }
+  .badge { display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 12px; margin-bottom: 14px; }
+  .teaser h2 { margin-bottom: 12px; }
+  .teaser .sub { margin-bottom: 20px; }
   footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: .9rem; }
 </style>
 </head>
@@ -49,6 +53,7 @@
     <a class="logo" href="#top">DevTechOps<span> Solutions</span></a>
     <nav>
       <a href="#services">Services</a>
+      <a href="#covered-money">Covered Money</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -75,7 +80,18 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="covered-money">
+    <div class="wrap">
+      <div class="teaser">
+        <span class="badge">Coming soon</span>
+        <h2>Covered Money</h2>
+        <p class="sub">Our own product: household budgeting that shows you where your money goes and how many months you are covered if your income stops. Multi-currency, built with care for families.</p>
+        <a class="btn" href="mailto:contact@devtechopssolutions.com?subject=Covered%20Money%20updates">Get launch updates</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
     <div class="wrap">
       <h2>About us</h2>
       <p class="sub">DevTechOps Solutions brings development, technology and operations together under one roof. Instead of juggling separate vendors for building software, running infrastructure and keeping it all secure, you work with one team that sees the whole picture.</p>
@@ -87,7 +103,7 @@
     </div>
   </section>
 
-  <section id="contact" class="alt">
+  <section id="contact">
     <div class="wrap">
       <h2>Contact</h2>
       <p class="sub">Tell us what you are working on or what is not working. Send us an email and we will reply to discuss how we can help.</p>
