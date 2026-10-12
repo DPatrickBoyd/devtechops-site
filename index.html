@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevTechOps Solutions</title>
+<meta name="description" content="DevTechOps Solutions: development, technology and operations services for growing businesses.">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f4f6fa; --text: #14202e; --muted: #536173;
+    --accent: #1f6feb; --accent-text: #ffffff; --border: #dde3ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e141c; --surface: #17202b; --text: #e8eef6; --muted: #93a3b6;
+      --accent: #4c8dff; --accent-text: #0e141c; --border: #263344;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  a { color: var(--accent); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 5; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 60px; gap: 16px; flex-wrap: wrap; }
+  .logo { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: .95rem; }
+  nav a:hover { color: var(--text); }
+  .hero { padding: 80px 0 64px; }
+  h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 16px; max-width: 18ch; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 60ch; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  section { padding: 56px 0; }
+  section.alt { background: var(--surface); }
+  h2 { font-size: 1.7rem; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 32px; max-width: 60ch; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  section.alt .card { background: var(--bg); }
+  .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .97rem; }
+  footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">DevTechOps<span> Solutions</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Technology that keeps your business moving.</h1>
+    <p class="lead">DevTechOps Solutions helps companies build, run and improve their software and infrastructure, so your team can focus on the work that matters.</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="services" class="alt">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="sub">From a first prototype to systems that run around the clock, we cover the technology your business depends on.</p>
+      <div class="grid">
+        <div class="card"><h3>Software development</h3><p>Custom applications, integrations and automation built to fit how your business works.</p></div>
+        <div class="card"><h3>DevOps &amp; automation</h3><p>CI/CD pipelines, infrastructure as code and reliable, repeatable deployments.</p></div>
+        <div class="card"><h3>Cloud &amp; infrastructure</h3><p>Design, migration and day-to-day management of cloud environments.</p></div>
+        <div class="card"><h3>IT operations &amp; support</h3><p>Monitoring, security hygiene and responsive help when something breaks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About us</h2>
+      <p class="sub">DevTechOps Solutions brings development, technology and operations together under one roof. Instead of juggling separate vendors for building software, running infrastructure and keeping it all secure, you work with one team that sees the whole picture.</p>
+      <div class="grid">
+        <div class="card"><h3>Clear communication</h3><p>Plain language, honest estimates and regular updates, with no jargon-padded surprises.</p></div>
+        <div class="card"><h3>Practical solutions</h3><p>We pick proven tools that fit your size and budget over whatever happens to be fashionable.</p></div>
+        <div class="card"><h3>Built to last</h3><p>Everything we deliver is documented and maintainable, so you are never locked in to us.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="sub">Tell us what you are working on or what is not working. Send us an email and we will reply to discuss how we can help.</p>
+      <p><a class="btn" href="mailto:contact@devtechopssolutions.com">contact@devtechopssolutions.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y">2026</span> DevTechOps Solutions. All rights reserved.</div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
