@@ -40,7 +40,9 @@
   section.alt .card { background: var(--bg); }
   .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
   .card p { margin: 0; color: var(--muted); font-size: .97rem; }
-  .teaser { border: 1px solid var(--border); border-radius: 16px; padding: 36px 28px; background: var(--surface); }
+  .teaser { border: 1px solid var(--border); border-radius: 16px; padding: 36px 28px; background: var(--surface); display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .teaser-icon { width: 140px; height: 140px; border-radius: 28px; flex: none; box-shadow: 0 6px 20px rgba(11, 35, 80, .25); }
+  .teaser-body { flex: 1 1 320px; }
   .badge { display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 12px; margin-bottom: 14px; }
   .teaser h2 { margin-bottom: 12px; }
   .teaser .sub { margin-bottom: 20px; }
@@ -83,10 +85,13 @@
   <section id="covered-money">
     <div class="wrap">
       <div class="teaser">
-        <span class="badge">Coming soon</span>
-        <h2>Covered Money</h2>
-        <p class="sub">Our own product: household budgeting that shows you where your money goes and how many months you are covered if your income stops. Multi-currency, built with care for families.</p>
-        <a class="btn" href="mailto:contact@devtechopssolutions.com?subject=Covered%20Money%20updates">Get launch updates</a>
+        <img class="teaser-icon" src="assets/covered-money-icon.webp" width="140" height="140" alt="Covered Money app icon: an umbrella over a dollar sign">
+        <div class="teaser-body">
+          <span class="badge">Coming soon</span>
+          <h2>Covered Money</h2>
+          <p class="sub">Our own product: household budgeting that shows you where your money goes and how many months you are covered if your income stops. Multi-currency, built with care for families.</p>
+          <a class="btn" href="mailto:contact@devtechopssolutions.com?subject=Covered%20Money%20updates">Get launch updates</a>
+        </div>
       </div>
     </div>
   </section>
