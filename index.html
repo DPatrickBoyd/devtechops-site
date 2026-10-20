@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DevTechOps Solutions</title>
 <meta name="description" content="DevTechOps Solutions: development, technology and operations services for growing businesses.">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/logo/mark.svg">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<meta property="og:title" content="DevTechOps Solutions">
+<meta property="og:image" content="https://devtechopssolutions.com/assets/logo/lockup-1200.png">
 <style>
   :root {
     --bg: #ffffff; --surface: #f4f6fa; --text: #14202e; --muted: #536173;
@@ -23,9 +28,16 @@
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
   header { border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 5; }
   header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 60px; gap: 16px; flex-wrap: wrap; }
-  .logo { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
-  .logo span { color: var(--accent); }
-  nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: .95rem; }
+  .logo { display: block; line-height: 0; }
+  .logo img { display: block; height: 40px; width: auto; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+  @media (max-width: 560px) {
+    .logo img { height: 34px; }
+    header .wrap { padding-top: 10px; padding-bottom: 10px; }
+    nav { gap: 2px 14px; }
+    nav a { font-size: .9rem; }
+  }
   nav a:hover { color: var(--text); }
   .hero { padding: 80px 0 64px; }
   h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 16px; max-width: 18ch; }
@@ -52,7 +64,12 @@
 <body>
 <header>
   <div class="wrap">
-    <a class="logo" href="#top">DevTechOps<span> Solutions</span></a>
+    <a class="logo" href="#top" aria-label="DevTechOps Solutions, back to top">
+      <picture>
+        <source srcset="assets/logo/lockup-dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="assets/logo/lockup.svg" width="296" height="72" alt="DevTechOps Solutions">
+      </picture>
+    </a>
     <nav>
       <a href="#services">Services</a>
       <a href="#covered-money">Covered Money</a>
